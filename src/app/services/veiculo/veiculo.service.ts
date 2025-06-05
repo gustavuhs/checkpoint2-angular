@@ -4,6 +4,11 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class VeiculoService {
+  private veiculos = [
+    { id: 1, marca: 'Porsche', modelo: 'GT3 RS', ano: 2024, placa: 'TET-0001' },
+    { id: 2, marca: 'McLaren', modelo: 'P1', ano: 2025, placa: 'GUS-1649' },
+    { id: 3, marca: 'Mercedes', modelo: 'G63', ano: 2022, placa: 'BMW-1234' }
+  ];
 
   constructor() {}
 
