@@ -1,0 +1,19 @@
+.veiculo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.add-btn {
+  background-color: #28a745;
+  color: white;
+  border-radius: 50%;
+  border: none;
+  padding: 15px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: #218838;
+}

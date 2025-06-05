@@ -1,0 +1,18 @@
+<div class="card shadow-sm">
+  <div class="card-header text-center">
+    <h4>{{ veiculo.marca }} - {{ veiculo.modelo }}</h4>
+  </div>
+  <div class="card-body">
+    <p><strong>Ano:</strong> {{ veiculo.ano }}</p>
+    <p><strong>Placa:</strong> {{ veiculo.placa }}</p>
+  </div>
+  <div class="card-footer text-center">
+    <button class="btn btn-danger" (click)="removeVeiculo()">
+      <i class="fa fa-trash"></i> Remover
+    </button>
+
+    <button class="btn btn-info ml-2 ms-2" (click)="mostrarDetalhes()">
+      <i class="fa fa-info-circle"></i> Detalhes
+    </button>
+  </div>
+</div>

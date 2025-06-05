@@ -1,0 +1,17 @@
+<div *ngIf="showModal" class="modal-overlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>Detalhes do Veículo</h3>
+      <button (click)="closeModal()" class="close-button">X</button>
+    </div>
+    <div class="modal-body">
+      <p><strong>Marca:</strong> {{ veiculo?.marca }}</p>
+      <p><strong>Modelo:</strong> {{ veiculo?.modelo }}</p>
+      <p><strong>Ano:</strong> {{ veiculo?.ano }}</p>
+      <p><strong>Placa:</strong> {{ veiculo?.placa }}</p>
+    </div>
+    <div class="modal-footer">
+      <button (click)="closeModal()" class="btn btn-secondary">Fechar</button>
+    </div>
+  </div>
+</div>

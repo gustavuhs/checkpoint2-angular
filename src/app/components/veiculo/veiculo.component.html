@@ -1,0 +1,23 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Lista de Veículos</h2>
+
+  <button class="btn btn-success mb-3" (click)="addVeiculo()">
+    <i class="fa fa-plus"></i> Adicionar Veículo
+  </button>
+
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let veiculo of veiculos">
+      <app-veiculo-card
+        [veiculo]="veiculo"
+        (remove)="deleteVeiculo($event)"
+        (detalhes)="mostrarDetalhes($event)">
+      </app-veiculo-card>
+    </div>
+  </div>
+
+  <app-modal
+    [showModal]="showModal"
+    [veiculo]="veiculoDetalhado"
+    (close)="fecharModal()">
+  </app-modal>
+</div>
